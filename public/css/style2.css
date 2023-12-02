@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5d8d8;
+}
+
+#container {
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(55, 22, 87);
+    margin: 0;
+
+    position: relative;
+    z-index: 3;
+}
+
+#content {
+    width: 1200px;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+#divSide{
+
+    width: 200px;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+#divContent{
+    width: 1200px;
+    height: 100vh;
+    background-color: rgb(55, 22, 87);
+
+}
+
+#miMenu {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px; 
+}
+
+#miMenu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#miMenu a:hover {
+    background-color: rgb(143, 97, 143); 
+}
+
+#miMenu a.seleccionada {
+    background-color: rgb(88, 69, 88);
+    border-radius: 20px; 
+}
+#miMenu i {
+    margin-right: 8px; 
+    color: #00d8ff;
+}
+
+#searchContainer {
+    display: flex;
+    align-items:  center;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#searchButton {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#items {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+#aulas {
+    width: 300px;
+    height: 120px;
+    background-color: rgb(238, 232, 238);
+    border-radius: 10px;
+    margin-right: 10px; 
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+#edificios {
+    width: 300px;
+    height: 120px;
+    background-color:rgb(238, 232, 238);
+    border-radius: 10px;
+    margin-right: 10px; /* Ajusta el valor según sea necesario para el espacio entre los divs */
+}
+
+#secciones {
+    width: 300px;
+    height: 120px;
+    background-color: rgb(238, 232, 238);
+    border-radius: 10px;
+}
+
+
+#extra {
+    width: 920px; /* O ajusta según sea necesario */
+    height: 250px; /* O ajusta según sea necesario */
+    background-color: rgb(238, 232, 238);
+    border-radius: 10px;
+    margin-top: 30px; /* Ajusta según sea necesario para la separación entre #seccion y los otros divs */
+    margin-left: 46px;
+    margin-right: 200px;
+}
+
+img{
+
+    width: 100px;
+    height: 100px;
+}
+#icono {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+
+ 
+    background-image: url('{{ asset("imagenes/aulas.png") }}');
+}
+
+
+#icono2 {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-image: url('{{ asset("imagenes/edi.png") }}');
+    /* Otros estilos según sea necesario */
+}
+
+
+
+#icono3 {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-image: url('{{ asset("imagenes/secciones.png") }}');
+    /* Otros estilos según sea necesario */
+}
+
+#descripciones {
+    display: flex;
+    flex-direction: column; /* Asegura que el texto esté en columnas */
+    margin-left: 90px;
+    margin-top:3px;
+
+}
+
+#descripciones h3 {
+    margin-bottom: 5px;
+}
+
+#descripciones p {
+    color: #555;
+}
+
